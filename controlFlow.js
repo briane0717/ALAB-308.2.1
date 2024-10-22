@@ -356,7 +356,7 @@ let gardenCapacity = area / spacePlant;
 console.log(gardenCapacity);
 
 let initalCount = 20;
-let weekCount = 2;
+let weekCount = 3;
 let plantCount = initalCount * 2 ** (weekCount - 1);
 console.log(plantCount);
 
