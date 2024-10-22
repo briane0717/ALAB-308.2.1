@@ -8,7 +8,7 @@ let gardenCapacity = area / spacePlant;
 console.log(gardenCapacity);
 
 let initialCount = 20;
-let weekCount = 3;
+let weekCount = 2.5;
 let plantCount = initialCount * 2 ** (weekCount - 1);
 console.log(plantCount);
 
@@ -19,6 +19,8 @@ if (plantCount > gardenCapacity * 0.8) {
   plantCount < gardenCapacity * 0.8
 ) {
   console.log("Monitor");
+} else if (plantCount < gardenCapacity * 0.5) {
+  console.log("Plant");
 } else {
   console.log("Everything is fine");
 }
