@@ -11,3 +11,9 @@ let initalCount = 20;
 let weekCount = 1;
 let plantCount = initalCount * 2 ** (weekCount - 1);
 console.log(plantCount);
+
+if (plantCount > gardenCapacity * 8) {
+  console.log("Plant More");
+} else {
+  console.log("Everything is fine");
+}
