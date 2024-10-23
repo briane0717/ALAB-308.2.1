@@ -64,3 +64,5 @@ plantCount = initialCount * 2 ** (weekCount - 1);
 console.log("Plant Count: " + plantCount);
 let requiredSpace = plantCount * spacePlant;
 console.log("Required Space: " + requiredSpace);
+let additionalSpaceNeeded = gardenCapacity - requiredSpace;
+console.log("Additional Space Needed: " + additionalSpaceNeeded);
