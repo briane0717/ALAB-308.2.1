@@ -60,3 +60,5 @@ if (plantCount > gardenCapacity * 0.8) {
 }
 initialCount = 100;
 weekCount = 10;
+plantCount = initialCount * 2 ** (weekCount - 1);
+console.log("Plant Count: " + plantCount);
