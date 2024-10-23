@@ -58,3 +58,5 @@ if (plantCount > gardenCapacity * 0.8) {
 } else {
   console.log("Everything is fine");
 }
+initialCount = 100;
+weekCount = 10;
