@@ -5,13 +5,13 @@ const spacePlant = 0.8;
 
 let gardenCapacity = area / spacePlant;
 
-console.log(gardenCapacity);
+console.log("Garden Capacity: " + gardenCapacity);
 
 let initialCount = 20;
 
 let weekCount = 1;
 let plantCount = initialCount * 2 ** (weekCount - 1);
-console.log(plantCount);
+console.log("Plant Count: " + plantCount);
 
 if (plantCount > gardenCapacity * 0.8) {
   console.log("Prune");
@@ -27,7 +27,7 @@ if (plantCount > gardenCapacity * 0.8) {
 }
 weekCount = 2;
 plantCount = initialCount * 2 ** (weekCount - 1);
-console.log(plantCount);
+console.log("Plant Count: " + plantCount);
 
 if (plantCount > gardenCapacity * 0.8) {
   console.log("Prune");
@@ -44,7 +44,7 @@ if (plantCount > gardenCapacity * 0.8) {
 
 weekCount = 3;
 plantCount = initialCount * 2 ** (weekCount - 1);
-console.log(plantCount);
+console.log("Plant Count: " + plantCount);
 
 if (plantCount > gardenCapacity * 0.8) {
   console.log("Prune");
