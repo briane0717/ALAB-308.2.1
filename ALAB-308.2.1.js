@@ -65,3 +65,20 @@ console.log("Plant Count: " + plantCount);
 let requiredSpace = plantCount * spacePlant;
 console.log("Required Space: " + requiredSpace);
 let additionalSpaceRequired = requiredSpace - area;
+console.log("Additional Space Required: " + additionalSpaceRequired);
+let newRadiusSquared = requiredSpace / PI;
+console.log(newRadiusSquared);
+
+let availableSpace = area;
+let neededSpace = requiredSpace;
+try {
+  if (availableSpace > neededSpace) {
+    console.log("We have space");
+  } else {
+    throw "Error -not enough space";
+  }
+} catch (error) {
+  console.log(error);
+} finally {
+  console.log("this runs if there is an error or if there is no error");
+}
